@@ -1,4 +1,4 @@
-# 📄 Abstractive Summarization on XSum
+# Abstractive Summarization on XSum
 
 > Comparative Insights into Model Training Strategies  
 > Master’s Degree in Data Science – NLP Project  
@@ -7,7 +7,7 @@
 
 ---
 
-## 🔍 Project Overview
+## Project Overview
 
 This project benchmarks multiple approaches to **abstractive summarization** on the challenging [XSum dataset](https://huggingface.co/datasets/xsum), which pairs BBC news articles with **highly compressed, single-sentence summaries**.
 
@@ -15,7 +15,7 @@ We explore a wide range of modeling strategies, from classical sequence-to-seque
 
 ---
 
-## 🎯 Goals
+## Goals
 
 - Compare summarization performance across:
   - Classical GRU + Attention baselines
@@ -28,7 +28,7 @@ We explore a wide range of modeling strategies, from classical sequence-to-seque
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 **XSum – Extreme Summarization (BBC News)**  
 - 216,511 samples total
@@ -41,7 +41,7 @@ We explore a wide range of modeling strategies, from classical sequence-to-seque
 
 ---
 
-## 🧠 Model Architectures
+## Model Architectures
 
 - **GRU Seq2Seq + Luong attention** (baseline)
 - **Transformer-based models**:
@@ -53,7 +53,7 @@ We explore a wide range of modeling strategies, from classical sequence-to-seque
 
 ---
 
-## 🧪 Fine-Tuning & Prompting
+## Fine-Tuning & Prompting
 
 | Strategy        | Description |
 |----------------|-------------|
@@ -63,7 +63,7 @@ We explore a wide range of modeling strategies, from classical sequence-to-seque
 
 ---
 
-## 🧾 Decoding Strategies
+## Decoding Strategies
 
 - **Greedy decoding**
 - **Top-k sampling (k = 50)**
@@ -72,7 +72,7 @@ We explore a wide range of modeling strategies, from classical sequence-to-seque
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 - **ROUGE-1, ROUGE-2, ROUGE-L**: N-gram overlap and LCS
 - **BERTScore (F1)**: Semantic similarity using contextual embeddings  
@@ -80,7 +80,7 @@ We explore a wide range of modeling strategies, from classical sequence-to-seque
 
 ---
 
-## 📈 Results Summary
+## Results Summary
 
 | Model                                | ROUGE-1  | ROUGE-2  | ROUGE-L  | BERTScore F1 |
 |-------------------------------------|----------|----------|----------|---------------|
@@ -118,7 +118,7 @@ We explore a wide range of modeling strategies, from classical sequence-to-seque
 
 ---
 
-## 🧠 Explainability
+## Explainability
 
 Used **Inseq** with **Input × Gradient (IxG)** to visualize token-level attribution in summaries.
 
@@ -128,7 +128,7 @@ Used **Inseq** with **Input × Gradient (IxG)** to visualize token-level attribu
 
 ---
 
-## 📌 Key Takeaways
+## Key Takeaways
 
 - **FLAN-T5** is the strongest out-of-the-box summarizer
 - **Full fine-tuning + LoRA** improves T5-small considerably
